@@ -3,7 +3,7 @@
  Plugin Name: kingkongcart
  Plugin URI: http://www.ithemeso.com
  Description: 대한민국 대표 워드프레스 쇼핑몰 플러그인 킹콩카트 입니다.
- Version: 0.1.6
+ Version: 0.2.0
  Author: ithemeso
  Author URI: http://www.ithemeso.com
  License: GPL2

@@ -67,7 +67,7 @@ $broke_id		= get_option("kingkongcart_mypage_broke");
 		break;
 
 		case "profile" :
-
+			require_once("mypage-profile.php");
 		break;
 
 		case "broke" :
