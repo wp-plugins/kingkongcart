@@ -41,8 +41,3 @@ Answer to foo bar dilemma.
 
 = 1.0.0 =
 킹콩카트 릴리즈
-
-== Arbitrary section ==
-
-
-`<?php code(); // goes in backticks ?>`
