@@ -45,6 +45,4 @@ Answer to foo bar dilemma.
 == Arbitrary section ==
 
 
-== A brief Markdown Example ==
-
 `<?php code(); // goes in backticks ?>`
