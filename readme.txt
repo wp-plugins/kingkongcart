@@ -18,6 +18,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 많이 사랑해 주세요~^^
 
 공식홈페이지 http://www.ithemeso.com
+페북공식페이지 : http://facebook.com/kingkongcart
 
 == Installation ==
 
