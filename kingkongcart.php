@@ -48,8 +48,6 @@ define(KINGKONGCART_PRODUCT_PREFIX, get_option("kingkongcart_product_prefix")); 
 define(KINGKONGCART_ORDER_PREFIX, get_option("kingkongcart_order_prefix"));     //주문번호 프리픽스
 define(KINGKONGCART_BOARD_PATH, plugins_url('', __FILE__)."/includes/board/skin/"); // board 경로
 
-
-require_once 'core/admin/update-check.php';                     // GITHUB UPDATE CHECK
 require_once 'ajax/kingkongcart-ajax.php';									// AJAX
 require_once 'core/admin/kingkong-core.php';       							// Core Setting Functions
 require_once 	'core/admin/meta-functions/kkcart_product-thumbnail.php';	// 썸네일 이미지 등록 메타필드
@@ -68,22 +66,6 @@ require_once 'includes/join-member.php';                // 회원가입
 require_once 'includes/order.php';                        // 주문하기 페이지
 require_once 'includes/board/qna.php';                     // 게시판:Q&A 숏코드
 require_once 'includes/board/afternote.php';              // 게시판:이용후기 숏코드
-
-
-
-$KingkongcartUpdateChecker = PucFactory::buildUpdateChecker(
-  'http://www.ithemeso.com/download/kingkongcart/json/update.php',
-  __FILE__,
-  'kingkongcart'
-);
-
-
-function addSecretKey($query){
-  $query['secret'] = KINGKONG_KEY;
-  $query['siteurl'] = home_url();
-  return $query;
-}
-$KingkongcartUpdateChecker->addQueryArgFilter('addSecretKey');
 
 
 /* 킹콩카트 초기 설정정보 init ***************************************************************************/

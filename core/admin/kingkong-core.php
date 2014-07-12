@@ -16,22 +16,6 @@ add_action('wp_enqueue_scripts', 'kkcart_style');                               
 
 
 
-/* 어드민 킹콩카트 관리자 업데이트 키 설정 알림 **************************************************************/
-
-add_action( 'admin_notices', 'my_admin_notice' );
-
-function my_admin_notice() {
-    if (current_user_can('manage_options')) { 
-
-        if(!KINGKONG_KEY or KINGKONG_KEY == ""){
-?>
-    <div class="updated">
-        <p style="color:red; font-weight:bold">킹콩카트 업데이트 키가 설정되지 않았습니다. 아이띰쏘(www.ithemeso.com)에서 받은 업데이트 키를 입력 해 주세요.</p>
-    </div>
-<?php
-        }
-    }
-}
 
 
 
