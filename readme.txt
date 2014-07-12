@@ -39,5 +39,5 @@ Answer to foo bar dilemma.
 
 == Changelog ==
 
-= 1.0.0 =
-킹콩카트 릴리즈
+= 0.1.6 =
+킹콩카트 워드프레스 릴리즈
