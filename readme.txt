@@ -8,7 +8,7 @@ Stable tag: 0.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-킹콩카트는 대한민국 최초의 한국형 워드프레스 플러그인 입니다.
+킹콩카트는 대한민국 최초의 한국형 워드프레스 쇼핑몰 플러그인 입니다.
 
 == Description ==
 
