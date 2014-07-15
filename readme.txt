@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,9 @@ Answer to foo bar dilemma.
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.2.1 =
+1. 제품 상세페이지/로그인/주문완료 페이지 리다이렉션 절대경로 수정
 
 = 0.2.0 =
 1. 회원가입시 이용약관/개인정보 textarea 컨텐츠 보이게끔 수정

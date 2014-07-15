@@ -106,9 +106,9 @@ function register_kkcart_menu_page(){
     $bubble_style = " <span class='update-plugins count-$new_order'><span class='update-count'>".$new_order."</span></span>";
 
     add_menu_page( 'kingkong', __('킹콩카트','kingkong').$bubble_style, 'administrator', 'kkcart_dashboard', 'kkcart_dashboard', KINGKONGCART_PLUGINS_URL.'/files/images/kingkong.svg', '25.4' ); 
-	add_submenu_page('kkcart_dashboard', 'kingkong', __('대시보드','kingkong'), 'administrator', 'kkcart_dashboard'); 
-	add_submenu_page('kkcart_dashboard', 'kingkong', __('주문관리','kingkong').$bubble_style, 'administrator', 'kkcart_order', 'kkcart_order');
-	add_submenu_page('kkcart_dashboard', 'kingkong', __('정산관리','kingkong'), 'administrator', 'kkcart_balance', 'kkcart_balance');
+    add_submenu_page('kkcart_dashboard', 'kingkong', __('대시보드','kingkong'), 'administrator', 'kkcart_dashboard'); 
+    add_submenu_page('kkcart_dashboard', 'kingkong', __('주문관리','kingkong').$bubble_style, 'administrator', 'kkcart_order', 'kkcart_order');
+    add_submenu_page('kkcart_dashboard', 'kingkong', __('정산관리','kingkong'), 'administrator', 'kkcart_balance', 'kkcart_balance');
     add_submenu_page('kkcart_dashboard', 'kingkong', __('재고관리','kingkong'), 'administrator', 'kkcart_quantity', 'kkcart_quantity');
     add_submenu_page('kkcart_dashboard', 'kingkong', __('문의관리','kingkong'), 'administrator', 'kkcart_board', 'kkcart_board');
 
@@ -122,36 +122,36 @@ function register_kkcart_menu_page(){
 
 function create_kkcart_custom_post() {
 
-	register_post_type( 'kkcart_product',
-		array(
-			'labels' => array(
-				'name' => __( '킹콩-상품관리' ),
-				'singular_name' => __( '상품관리' ),
-				'add_new' => __('상품 등록'),
-				'add_new_item' => __( '상품 등록하기' )
-			),
-		'menu_icon' => KINGKONGCART_PLUGINS_URL.'/files/images/kingkong.svg',
-		'public' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'has_archive' => true,
+    register_post_type( 'kkcart_product',
+        array(
+            'labels' => array(
+                'name' => __( '킹콩-상품관리' ),
+                'singular_name' => __( '상품관리' ),
+                'add_new' => __('상품 등록'),
+                'add_new_item' => __( '상품 등록하기' )
+            ),
+        'menu_icon' => KINGKONGCART_PLUGINS_URL.'/files/images/kingkong.svg',
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'has_archive' => true,
         'menu_position' => 28
-		)
-	);
+        )
+    );
 
    register_taxonomy('section','kkcart_product',
     array(
-    	'public' => true,
+        'public' => true,
         'hierarchical' => true,
         'label' => '상품 카테고리',
         'query_var' => true,
         'rewrite' => array('slug' => 'section', 'with_front' => false),
         'show_ui' => true,
-        'show_in_menu' => 'kkcart_product',
+        'show_in_menu' => true,
         'show_in_nav_menus' => true,
         'menu_position' => 2
-    	)
-	);
+        )
+    );
 
 }
 
@@ -163,9 +163,9 @@ function create_kkcart_custom_post() {
 /* 상품등록 메타필드 구성 ****************************************************************************************/
 
 function kkcart_product_meta_init(){
-	add_meta_box("kkcart_product_meta_thumnail", "킹콩카트 상품정보 설정", "kkcart_product_meta_thumnail", "kkcart_product", "normal", "low");
-	register_taxonomy_for_object_type('section', 'kkcart_product'); 
-	register_taxonomy_for_object_type('post_tag', 'kkcart_product');
+    add_meta_box("kkcart_product_meta_thumnail", "킹콩카트 상품정보 설정", "kkcart_product_meta_thumnail", "kkcart_product", "normal", "low");
+    register_taxonomy_for_object_type('section', 'kkcart_product'); 
+    register_taxonomy_for_object_type('post_tag', 'kkcart_product');
 }   
 
 
@@ -238,9 +238,9 @@ function manage_kkcart_product_columns($column_name, $id) {
     switch ($column_name) {
 
     case 'thumbnail':
-		$added_thumbnail_ids = get_post_meta($id, 'kingkongcart_added_thumbnail_id', true);
-		$each_thumb_id = unserialize($added_thumbnail_ids);
-    	$thumbnail_url = wp_get_attachment_thumb_url($each_thumb_id[0]);
+        $added_thumbnail_ids = get_post_meta($id, 'kingkongcart_added_thumbnail_id', true);
+        $each_thumb_id = unserialize($added_thumbnail_ids);
+        $thumbnail_url = wp_get_attachment_thumb_url($each_thumb_id[0]);
         echo "<a href='post.php?post=".$id."&action=edit'><img src='".$thumbnail_url."' style='width:80px; height:auto; padding:10px 10px; background:#fff; border:1px solid #e8e8e8'></a>";
         break;
 
@@ -251,44 +251,44 @@ function manage_kkcart_product_columns($column_name, $id) {
         } else {
             echo number_format($info[0]);
         }
-    	
-    	break;
+        
+        break;
 
     case 'discount_rate':
 
-    	if($info[2]){
-    		echo $info[2]."%";
-    	}else {
-    		echo "없음";
-    	}
-    	break;
+        if($info[2]){
+            echo $info[2]."%";
+        }else {
+            echo "없음";
+        }
+        break;
 
     case 'discount_price':
 
-    	if($info[3]){
-    		echo number_format($info[3]);
-    	}else {
-    		echo "없음";
-    	}
-    	break;
+        if($info[3]){
+            echo number_format($info[3]);
+        }else {
+            echo "없음";
+        }
+        break;
 
     case 'mileage_rate':
 
-    	if($info[4]){
-    		echo $info[4]."%";
-    	}else {
-    		echo "없음";
-    	}
-    	break;
+        if($info[4]){
+            echo $info[4]."%";
+        }else {
+            echo "없음";
+        }
+        break;
 
     case 'mileage_price':
 
-    	if($info[5]){
-    		echo number_format($info[5]);
-    	}else {
-    		echo "없음";
-    	}
-    	break;
+        if($info[5]){
+            echo number_format($info[5]);
+        }else {
+            echo "없음";
+        }
+        break;
 
     } // end switch
 }
@@ -312,8 +312,7 @@ function kingkongcart_redirect() {
             $return_template = TEMPLATEPATH . '/' . "kingkongcart-".$templatefilename;
 
         } else {
-            $return_template = $plugindir . '/templates/' . $templatefilename;
-            $return_template = str_replace("/core/admin", "", $return_template);
+            $return_template = KINGKONGCART_ABSPATH . '/templates/' . $templatefilename;
         }
 
         do_kingkongcart_redirect($return_template);
@@ -327,8 +326,7 @@ function kingkongcart_redirect() {
             $return_template = TEMPLATEPATH . '/' . $templatefilename;
 
         } else {
-            $return_template = $plugindir . '/templates/' . $templatefilename;
-            $return_template = str_replace("/core/admin", "", $return_template);
+            $return_template = KINGKONGCART_ABSPATH . '/templates/' . $templatefilename;
         }
 
         do_kingkongcart_redirect($return_template);
@@ -342,8 +340,7 @@ function kingkongcart_redirect() {
             $return_template = TEMPLATEPATH . '/' . $templatefilename;
 
         } else {
-            $return_template = $plugindir . '/templates/' . $templatefilename;
-            $return_template = str_replace("/core/admin", "", $return_template);
+            $return_template = KINGKONGCART_ABSPATH . '/templates/' . $templatefilename;
         }
 
         do_kingkongcart_redirect($return_template);
@@ -357,8 +354,7 @@ function kingkongcart_redirect() {
             $return_template = TEMPLATEPATH . '/' . $templatefilename;
 
         } else {
-            $return_template = $plugindir . '/includes/' . $templatefilename;
-            $return_template = str_replace("/core/admin", "", $return_template);
+            $return_template = KINGKONGCART_ABSPATH . '/includes/' . $templatefilename;
         }
 
         do_kingkongcart_redirect($return_template);
@@ -373,8 +369,7 @@ function kingkongcart_redirect() {
                 $return_template = TEMPLATEPATH . '/' . "page-".$templatefilename;
 
             } else {
-                $return_template = $plugindir . '/templates/' . $templatefilename;
-                $return_template = str_replace("/core/admin", "", $return_template);
+                $return_template = KINGKONGCART_ABSPATH . '/templates/' . $templatefilename;
             }
         } else {
             wp_redirect(home_url());
