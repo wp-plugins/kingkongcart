@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.3.1
+Stable tag: 0.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.4.0 =
+1. ORDER RESULT 페이지 추가
+2. 서브 메뉴 SORTING 을 위한 클래스 추가
+3. 회원가입시 모바일/PC 별 FORM SUBMIT
+4. 사용자 지정 계좌로 무통장 거래 가능하도록 수정
+5. 어드민 페이지 일부 타이틀 수정
+6. 재고관리 타이틀 표기 안되는 오류 수정
+7. 마이페이지 회원정보 수정 후 로그인 페이지로 이동
+8. 인풋 버튼 킹콩테마를 위한 클래스 지정
+9. 주문취소시 이전 단계로 이동
+10. 플러그인 활성화시 주문완료 페이지 자동 추가
 
 = 0.3.1 =
 1. 클래스 중복으로 인한 오류 긴급 패치
