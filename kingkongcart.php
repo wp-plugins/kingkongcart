@@ -192,6 +192,8 @@ function kingkongcart_activate(){
 
   $payment = array();
   $payment['method'] = 'INICIS';
+  $payment['inicis_key_id'] = 'INIpayTest';
+  $payment['inicis_key_pwd'] = '1111';
   $payment['yd_check'] = 0;
   $payment['site_code'] = "";
   $payment['site_key'] = "";
