@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.4.4
+Stable tag: 0.4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.4.5 =
+1. 로그인 function 일부 수정 
 
 = 0.4.4 =
 1. 대시보드/결제설정 페이지 이니시스 온라인 신청 폼 추가
