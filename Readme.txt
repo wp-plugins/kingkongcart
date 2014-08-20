@@ -38,6 +38,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
+= 0.4.6 =
+1. 어드민 입금완료/배송대기/배송완료시 Developer Action Hook 추가
+
 = 0.4.5 =
 1. 로그인 function 일부 수정 
 
