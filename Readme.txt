@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.4.6
+Stable tag: 0.4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 2. 대시보드에서 설치를 진행하시려면 플러그인검색 에서 킹콩카트를 검색 하시면 됩니다.
 3. 파일로 설치 하실 경우 wp-admin/plugins/kingkongcart 폴더를 생성하신 후 압축을 풀어 주시면 됩니다.
 
-== Screenshots ==
+== Screenshots == 
 
 1. /assets/screenshot-1.png
 2. /assets/screenshot-2.png
@@ -37,6 +37,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.4.7 =
+1. 주문완료시 동작하는 Action Hook 추가
+2. 주문시 입력하는 정보가 회원정보로 자동으로 교체되도록 수정
+3. 주문관리 페이지 주문상세보기에 우편번호가 표시되도록 수정
 
 = 0.4.6 =
 1. 어드민 입금완료/배송대기/배송완료시 Developer Action Hook 추가
