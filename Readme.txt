@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.4.7
+Stable tag: 0.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.5.0 =
+1. 쿠폰 기능 추가
+2. 장바구니 주문, single product 주문 일부 오류 수정
+3. 쿠폰 리스트 쇼트코드 추가
+4. 쿠폰 리스트 커스터마이징을 위한 Action Hook 추가
 
 = 0.4.7 =
 1. 주문완료시 동작하는 Action Hook 추가
