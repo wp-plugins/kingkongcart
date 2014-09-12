@@ -93,7 +93,7 @@ $inicis_key_count 	= scandir($inicis_key_dir, 1);
 
 for ($i=0; $i < count($inicis_key_count); $i++) { 
  	if($inicis_key_count[$i] != "." and $inicis_key_count[$i] != ".." and strpos($inicis_key_count[$i],".") === false ){
- 		if($inicis_key_count[$i] == $inicis_key_count){
+ 		if($inicis_key_count[$i] == $inicis_key_id){
  			$inicis_key_option .= "<option selected>".$inicis_key_count[$i]."</option>";
  		}
  		else {
