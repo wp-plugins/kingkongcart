@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.6.0
+Stable tag: 0.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.6.1 =
+1. 비회원 주문시 이용약관 페이지 미표기 문제 수정
+2. 보유한 쿠폰이 없을경우 표시 문제 수정
+3. 결제설정에서 이니시스 키값 설정시 TEST 키값으로 보이던 문제 수정
 
 = 0.6.0 =
 1. 다운로드 상품 기능 추가
