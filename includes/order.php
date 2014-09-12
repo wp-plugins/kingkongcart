@@ -654,7 +654,17 @@ if (is_user_logged_in()){
 						<input type="hidden" name="select_coupon_capability">
 						<input type="hidden" name="select_coupon_kind">
 						<input type="hidden" name="select_coupon_product">
-						<input type="text" style="width:300px" name="using_coupon" value="<?php echo get_the_title($_POST['will_using_coupon_id']);?>" readonly> 
+<?php
+	if($_POST['will_using_coupon_id']){
+?>
+						<input type="text" style="width:300px" name="using_coupon" value="<?php echo get_the_title($_POST['will_using_coupon_id']);?>" readonly>
+<?php
+	} else {
+?>
+						<input type="text" style="width:300px" name="using_coupon" readonly placeholder="사용할 쿠폰을 선택하세요">
+<?php
+	}
+?>
 						<input type="button" class="kingkongtheme_button" value="쿠폰적용" onclick="use_coupon(<?php echo $user_id;?>,<?php echo $total_price;?>);"> <input type="button" class="kingkongtheme_button" value="쿠폰적용취소" onclick="location.href='<?php echo get_the_permalink($post_id);?>';">
 					</td>
 				</tr>
