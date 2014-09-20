@@ -335,7 +335,8 @@ if($shipping_cost == 0){
 		<button type="button" style="width:100%; height:40px; font-size:16px; margin-top:5px">결제취소</button>
 	</ul>
 </div>
-<input type="hidden" name="P_MID" value="INIpayTest"> 
+
+<input type="hidden" name="P_MID" value="<?php echo $inicis_key_id;?>"> 
 <input type="hidden" name="P_NEXT_URL" value="<?php echo KINGKONGCART_PLUGINS_URL."/includes/order_result-mobile-post.php";?>">
 <input type="hidden" name="P_RETURN_URL" value="<?php echo KINGKONGCART_PLUGINS_URL."/includes/order_result-mobile-get.php";?>">
 <input type="hidden" name="P_NOTI_URL" value="<?php echo KINGKONGCART_PLUGINS_URL."/payment/INICIS/mx_rnoti.php";?>">
@@ -355,17 +356,8 @@ if($shipping_cost == 0){
 <!--가격-->
 <input type="hidden" name="P_AMT" value="<?php echo $with_shipping_price;?>" id="textfield4" style="border-color:#cdcdcd; border-width:1px; border-style:solid; color:#555555; height:15px;"/>
 <!--상점이름-->
-<input type="hidden" name="P_MNAME" value="이니시스 쇼핑몰" id="textfield6" style="border-color:#cdcdcd; border-width:1px; border-style:solid; color:#555555; height:15px;"/>
-<!--
-              <select name="paymethod" id="select">
-				<option value="wcard">신용카드
-				<option value="DBANK">계좌이체
-				<option value="vbank">가상계좌
-				<option value="mobile">휴대폰
-				<option value="culture">문화 상품권
-				<option value="hpmn">해피머니 상품권
-              </select>
--->
+<input type="hidden" name="P_MNAME" value="<?php wp_title();?>" id="textfield6" style="border-color:#cdcdcd; border-width:1px; border-style:solid; color:#555555; height:15px;"/>
+
 </form>
 
 <form method="post" id="use_mileage_form">
@@ -378,6 +370,7 @@ if($shipping_cost == 0){
 </form>
 
 <form method="post" id="pay_result" name="pay_result">
+
 	<input type="hidden" name="price" value="<?php echo $with_shipping_price;?>">
 	<input type="hidden" name="tel" value="010-3410-3594">
 	<input type="hidden" name="email" value="<?php echo $user_email;?>">
