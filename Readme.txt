@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.7.0
+Stable tag: 0.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.7.1 =
+1. 일괄 배송 등록 오류 수정
+2. 모바일 결제폼 연락처 연동 오류 수정
+3. 모바일 결제시 상품정보 오류 수정
+4. 이니시스 신용카드 ISP 결제 오류 수정
 
 = 0.7.0 =
 1. 이니시스 관리자페이지에서 상품명과 구매자명이 깨져보이는 문제 수정
