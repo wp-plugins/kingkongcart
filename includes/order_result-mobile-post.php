@@ -1,21 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
 		require_once('HttpClient.class.php');
-		$P_TID;				// 거래번호
-		$P_MID;				// 상점아이디
-		$P_AUTH_DT;			// 승인일자
-		$P_STATUS;			// 거래상태 (00:성공, 01:실패)
-		$P_TYPE;			// 지불수단
-		$P_OID;				// 상점주문번호
-		$P_FN_CD1;			// 금융사코드1
-		$P_FN_CD2;			// 금융사코드2
-		$P_FN_NM;			// 금융사명 (은행명, 카드사명, 이통사명)
-		$P_AMT;				// 거래금액
-		$P_UNAME;			// 결제고객성명
-		$P_RMESG1;			// 결과코드
-		$P_RMESG2;			// 결과메시지
-		$P_NOTI;			// 노티메시지(상점에서 올린 메시지)
-		$P_AUTH_NO;			// 승인번호
 
 		$P_STATUS = $_POST['P_STATUS'];
 		$P_UNAME  = iconv("EUC-KR", "UTF-8", $_POST['P_UNAME']);
@@ -27,11 +12,6 @@ header("Content-Type: text/html; charset=UTF-8");
 
 		if($_GET['P_STATUS'] == "00"){
 			$client = new HttpClient("fcmobile.inicis.com");
-			$param  = "";
-        	$param .= "?P_MID=".$_GET['P_NOTI']."&";
-        	$param .= "P_TID=".$_GET['P_TID'];
-
-			//$client->setDebug(true);
 			$client->post('/smart/pay_req_url.php', array(
 					'P_MID' => $_GET['P_NOTI'],
 					'P_TID' => $_GET['P_TID']
@@ -62,7 +42,6 @@ if($P_STATUS == "00" or $get_status == "200"){
 		window.opener.document.pay_result.P_RMESG1.value 		= "<?php echo $P_RMESG1;?>";
 		window.opener.document.pay_result.P_RMESG2.value 		= "<?php echo $P_RMESG2;?>";
 		window.close();
-		//window.opener.document.pay_result.submit();
 	</script>
 <?php
 }
