@@ -17,7 +17,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 앞으로 기능적 개선이 계속 이루어 질 예정이며 다양한 테마들도 추가 될 예정입니다.
 많이 사랑해 주세요~^^
 
-공식홈페이지 http://www.ithemeso.com
+공식홈페이지 http://www.kingkongcart.com
 
 페북공식페이지 : http://facebook.com/kingkongcart
 
