@@ -834,12 +834,6 @@ function order_status_change(){
 		break;
 
 		case 3 :
-
-			$using_mileage = get_order_meta($order->ID, "using_mileage");
-			$current_mileage = get_user_meta($order->order_id, "kingkong_mileage", true);
-			$calculate_mileage = $current_mileage - $using_mileage;
-			update_user_meta($order->order_id, "kingkong_mileage", $calculate_mileage);
-
 			// 배송완료 HOOK
 			do_action('order_shipping_complete_after', $buyer_detail);
 		break;
