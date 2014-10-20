@@ -868,13 +868,11 @@ function order_cancle(){
 
 
 	// 사용된 적립금을 반환 시킨다. //////////////////////////////////////////////////////////////////////
-	if($order->status == 3){ // 무통장입금대기는 마일리지를 사용하지 않았음으로,
 		$using_mileage = get_order_meta($id, "using_mileage");
 		$current_mileage = get_user_meta($order->order_id, "kingkong_mileage", true);
 		$calculate_mileage = $current_mileage + $using_mileage;
 
 		update_user_meta($order->order_id, "kingkong_mileage", $calculate_mileage);
-	}
 	////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// 자동 재고 관리 설정
