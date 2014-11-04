@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.7.3
+Stable tag: 0.7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.7.4 =
+1. 관리자 주문관리/정산관리 에 pagination 추가
+2. 정산관리 일부 오류 수정
+3. 비회원 주문조회 기능 추가
 
 = 0.7.3 =
 1. 상품리스트 커스터마이징 관련 액션 훅 추가
