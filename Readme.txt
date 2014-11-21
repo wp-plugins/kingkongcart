@@ -4,7 +4,7 @@ Donate link: http://www.ithemeso.com
 Tags: kingkongcart, 킹콩카트, 쇼핑몰, 쇼핑몰플러그인, kingkong, 플러그인, 쇼핑, 워드프레스, shopping, mall, 킹콩
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 0.7.5
+Stable tag: 0.7.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 6. /assets/screenshot-6.png
 
 == Changelog ==
+
+= 0.7.6 =
+1. 상품등록 신규등록 썸네일 오류 수정
 
 = 0.7.5 =
 1. 회원가입시 휴대전화 입력처리 오류 수정
