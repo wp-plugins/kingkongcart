@@ -1,0 +1,388 @@
+#wpc_login {
+	max-width:400px;
+	margin:0 auto;
+}
+
+#wpc_login input {
+	width:100%;
+}
+
+#wpc_login > ul > li > table {
+	border:none;
+}
+
+#wpc_login > ul > li > table td {
+	border:none;
+}
+
+#wpc_login button {
+	width:100%;
+}
+
+#wpc_login button > ul {
+	list-style:none;
+	padding:0px;
+}
+
+#wpc_login button > ul > li {
+	float:left;
+}
+
+#wpc_login button > ul > .wpc-i-naver {
+	width:25px;
+	height:25px;
+	background-image : url('../images/icon-naver.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	margin-right:15px;
+}
+
+#wpc_login button > ul > .wpc-i-kakao {
+	width:25px;
+	height:25px;
+	background-image : url('../images/icon-kakao.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	margin-right:15px;
+}
+
+#wpc_login button > ul > .wpc-i-facebook {
+	width:25px;
+	height:25px;
+	background-image : url('../images/icon-facebook.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	margin-right:15px;
+}
+
+#wpc_login button > ul > .wpc-i-twitter {
+	width:25px;
+	height:25px;
+	background-image : url('../images/icon-twitter.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	margin-right:15px;
+}
+
+#wpc_login button > ul > .wpc-i-google {
+	width:25px;
+	height:25px;
+	background-image : url('../images/icon-google.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	margin-right:15px;
+}
+
+#wpc_login button > ul > .wpc-i-text {
+	position:relative;
+	top:5px;
+	padding-left:15px;
+	color:#fff;
+	font-weight:bold;
+}
+
+#wpc_login button > ul > li+li{
+	border-left:1px solid #fff;
+}
+
+#wpc_login > ul > li {
+	margin:0;
+	padding:0;
+}
+
+#wpc_login > ul > li > button > ul > li {
+	margin:0px;
+}
+
+#wpc_login > ul > li > ul > .wpc-icon {
+	margin:0px;
+}
+
+#wpc_login > ul > li+li {
+	margin-top:10px;
+}
+
+#wpc_login > ul > li > button > img {
+	width:30px;
+	height:auto;
+	margin-right:10px;
+}
+
+.wpc-s-btn {
+	padding:8px 15px !important;
+	text-align:left !important;
+	border-radius:3px !important;
+}
+
+.wpc-btn-facebook {
+	background:#3b589c;
+	color:#424242;
+}
+
+.wpc-btn-naver {
+	background:#1EC800;
+	color:#424242;
+}
+
+.wpc-btn-twitter {
+	background:#55a0d6;
+	color:#424242;
+}
+
+.wpc-btn-kakao {
+	background:#ffd10a;
+	color:#424242;
+}
+
+.wpc-btn-google {
+	background:#dc4a38;
+}
+
+#wpc_loading {
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#wpc_loading > .loading_background {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#000;
+	z-index:999;
+	opacity:0.5;
+}
+
+#wpc_loading > .loading_text {
+	max-width:320px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	top:100px;
+	color:#fff;
+	z-index:9999;
+}
+
+#wpc_loading > .loading_text > div {
+	background:#000;
+	padding:10px 0px;
+	border-radius:5px;
+	opacity:0.8;
+}
+
+.wpc_input {
+	padding:7px 0 7px 10px;
+	font-size:14px;
+	color:#424242;
+}
+
+.wpc-icon {
+	border-radius:3px;
+	position:relative;
+	float:left;
+	margin-right:5px !important;
+	padding:7px 7px;
+}
+
+.wpc-icon-btn-facebook {
+	background:#3b589c;
+}
+
+.wpc-icon-btn-naver {
+	background:#1EC800;
+}
+
+.wpc-icon-btn-twitter {
+	background:#55a0d6;
+}
+
+.wpc-icon-btn-kakao {
+	background:#ffd10a;
+}
+
+.wpc-icon-btn-google {
+	background:#dc4a38;
+}
+
+.wpc-icon-facebook {
+	background:#3b589c;
+	width:25px;
+	height:25px;
+	border-radius:3px;
+	background-image : url('../images/icon-facebook.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.wpc-icon-twitter {
+	background:#55a0d6;
+	width:25px;
+	height:25px;
+	border-radius:3px;
+	background-image : url('../images/icon-twitter.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.wpc-icon-naver {
+	background:#1EC800;
+	width:25px;
+	height:25px;
+	border-radius:3px;
+	background-image : url('../images/icon-naver.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.wpc-icon-kakao {
+	background:#ffd10a;
+	width:25px;
+	height:25px;
+	border-radius:3px;
+	background-image : url('../images/icon-kakao.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.wpc-icon-google {
+	background:#dc4a38;
+	width:25px;
+	height:25px;
+	border-radius:3px;
+	background-image : url('../images/icon-google.png');
+	background-size : 25px 25px;
+	background-repeat : no-repeat;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+#wpc_join ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.wpc_form_error {
+	border:1px solid #da2128;
+}
+
+.wpc_popup_top_close {
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+
+@media( max-width: 768px ){
+	.wpc_popup_responsive_hide {display:none;}
+	#wpc_popup_mobile {display:block;}
+}
+
+@media ( min-width: 769px ){
+	#wpc_popup_mobile { display:none; }
+}
+
+
+#wpc_popup_mobile {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:9999;
+}
+
+#wpc_popup_mobile > .wpc_popup_mobile_bottom {
+	width:90%;
+	margin:0 auto;
+	min-height:33px;
+	padding:5px 5px;
+	background:#000;
+	text-align:right;
+}
+
+#wpc_popup_mobile > .wpc_popup_mobile_wrap > ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#wpc_popup_mobile > .wpc_popup_mobile_wrap > ul > li {
+	max-width:90%;
+	margin:0 auto;
+}
+
+#wpc_popup_mobile > .wpc_popup_mobile_wrap > ul > li+li {
+	margin-top:10px;
+}
+
+#wpc_popup_mobile > .wpc_popup_mobile_wrap {
+	width:90%;
+	max-height:80%;
+	overflow-y:auto;
+	margin:0 auto;
+	margin-top:5%;
+	margin-bottom:10px;
+}
+
+#wpc_popup_mobile > .wpc_popup_mobile_background {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.7;
+	z-index:-1;
+}
+
+.wpc-icon-close {
+	cursor:pointer;
+}
+.wpc-icon-close:before {
+  display:inline-block;
+  float:right;
+  width:25px;
+  height:25px;
+  line-height:1;
+  font-weight:400;
+  text-decoration:inherit;
+  font-style:normal;
+  font-family: dashicons;
+  vertical-align:top;
+  font-size:25px;
+  -webkit-font-smoothing: antialased;
+  content: "\f153";  
+}
+
+#wpc_mbroke_wrap > ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+
+
+
+
+
+
+
